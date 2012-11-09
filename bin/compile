@@ -184,8 +184,8 @@ OUT=$(virtualenv --python $PYTHON_EXE --distribute --never-download --prompt='(v
 #  fi
   for dir in $VIRTUALENV_DIRS; do
     rm -fr $dir &> /dev/null || true
-#  done
-#  OUT=$(virtualenv --python $PYTHON_EXE --distribute --never-download  --prompt='(venv) ' $VIRTUALENV_LOC )
+  done
+  OUT=$(virtualenv --python $PYTHON_EXE --distribute --never-download  --prompt='(venv) ' $VIRTUALENV_LOC )
 #}
 echo "$OUT" | indent
 

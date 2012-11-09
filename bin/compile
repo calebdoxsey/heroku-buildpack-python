@@ -205,8 +205,8 @@ if (grep -Fiq "hg+" requirements.txt) then
 fi
 
 # Hack to remove bad simplejson
-pip uninstall simplejson
-pip uninstall yos-social-sdk
+pip uninstall -y simplejson
+pip uninstall -y yos-social-sdk
 
 # Install dependencies with Pip.
 puts-step "Installing dependencies using pip version $(pip --version | awk '{print $2}')"
